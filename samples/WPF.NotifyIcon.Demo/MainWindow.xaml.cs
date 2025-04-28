@@ -96,6 +96,10 @@ public partial class MainWindow : Window
                 this.Close();
                 return;
 
+            case "SetToolTip":
+                _notifyIcon.SetToolTip(TextBox_ToolTip.Text);
+                return;
+
             default:
                 toolTipIcon = ToolTipIcon.None;
                 break;

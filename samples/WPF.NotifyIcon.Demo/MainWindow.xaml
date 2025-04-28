@@ -10,6 +10,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -26,7 +27,12 @@
             <Button Content="自定义 | CUSTOM" Margin="5" Tag="CUSTOM" Click="Button_Click"></Button>
         </StackPanel>
 
-        <Button Grid.Row="2" Content="退出 | Close" Margin="5" Tag="CLOSE" Click="Button_Click" VerticalAlignment="Bottom" ></Button>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <TextBox x:Name="TextBox_ToolTip" Text="HELLO!\nI'm here!" MinWidth="200" Margin="5"></TextBox>
+            <Button Content="设置托盘提示 | Set ToolTip" Margin="5" Tag="SetToolTip" Click="Button_Click"></Button>
+        </StackPanel>
+
+        <Button Grid.Row="3" Content="退出 | Close" Margin="5" Tag="CLOSE" Click="Button_Click" VerticalAlignment="Bottom" ></Button>
 
     </Grid>
 </Window>

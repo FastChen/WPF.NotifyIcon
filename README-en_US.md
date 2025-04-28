@@ -1,94 +1,94 @@
 <div align="center">
   <img src="./images/logo_256x.png" alt="WPF.NotifyIcon" height="160" width="160"/>
   <h1>WPF.NotifyIcon</h1>
-  <h3>WPF 上的原生 NotifyIcon 实现</h3>
+  <h3>WPF Native NotifyIcon</h3>
   <img src="https://img.shields.io/github/stars/fastchen/WPF.NotifyIcon?label=Star&logo=github"/>
   <a href="https://github.com/FastChen/WPF.NotifyIcon/issues"><img src="https://img.shields.io/github/issues/fastchen/WPF.NotifyIcon?label=Issues"/></a>
-  <h4>中文 / <a href="./README-en_US.md">English</a></h4>
+  <h4><a href="./README.md">中文</a> / English</h4>
 </div>
 
 ## 特点
 
-- 仅 10Kb 大小
-- 使用 `Shell_NotifyIcon` 原生实现，无需第三方库支持。
-- 支持 .NET4.62 Framework 至 .NET9(还可以更低需要自行编译)
-- 在 Windows 上弹出气泡通知(Win10以上系统则是 Toast 的普通通知)。
-- 与 WinForm NotifyIcon 控件的使用类似(目前在实现完全一致使用方案)。
+- Only 10Kb Size
+- Use WinAPI `Shell_NotifyIcon`
+- Support .NET4.62 Framework to .NET9
+- Windows BalloonTip
+- Like WinForm NotifyIcon Control
 
-## 使用
+## Usage
 
-**步骤 1:** 在你的 WPF 项目安装包 `WPF.NotifyIcon`
+**Step 1:** Install Package `WPF.NotifyIcon` on Nuget
 
-使用命令行: `Install-Package WPF.NotifyIcon`
+CommandLine: `Install-Package WPF.NotifyIcon`
 
-使用可视化界面: 
+Visual Studio Nuget: 
 ![](images\nuget.png)
 
-**步骤 2:** 创建一个 NotifyIcon
+**Step 2:** NotifyIcon = new();
 
 > [!TIP]
-> 有关使用可以查看 `samples\WPF.NotifyIcon.Demo` 示例!
+> you can check `samples\WPF.NotifyIcon.Demo` get more info.
 
 
 ```c#
-// 创建一个 NotifyIcon
+// Create new NotifyIcon
 private NotifyIcon _notifyIcon = new();
 
 public MainWindow()
 {
     InitializeComponent();
 
-    // 获取程序自身图标
+    // Get Icon.Handle from self
     var icon = _notifyIcon.GetIconHandleFromFile(Environment.ProcessPath);
 
-    // 创建托盘图标与设置托盘
+    // Create Tray in taskbar
     _notifyIcon.Create(this, icon, "HELLO!\nI'm here!");
 
-    // 可以绑定左右键触发事件
+    // Action Event
     _notifyIcon.LeftClick += ShowWindow;
     _notifyIcon.RightClick += ShowContextMenu;
 
-    // 弹出 ShowBalloonTip
+    // Popup ShowBalloonTip
     _notifyIcon.ShowBalloonTip(5000, "Hello!", "WPF.NotifyIcon!", ToolTipIcon.None);
 
-    // 设置 ToolTip 内容
+    // Update ToolTip
      _notifyIcon.SetToolTip("Wow!");
 }
 ```
 
-其中 `ToolTipIcon` 支持以下的图标:
+the `ToolTipIcon` Support icon list:
 
 ```c#
 public enum ToolTipIcon
 {
     /// <summary>
-    /// 不显示图标
+    /// No icon.
     /// </summary>
     None = 0,
 
     /// <summary>
-    /// 信息图标
+    /// Info icon.
     /// </summary>
     Info = 1,
 
     /// <summary>
-    /// 警告图标
+    /// Warning icon.
     /// </summary>
     Warning = 2,
 
     /// <summary>
-    /// 错误图标
+    /// Error icon.
     /// </summary>
     Error = 3,
 
     /// <summary>
-    /// 创建时使用应用程序图标
+    /// Use Application icon.
     /// </summary>
     Custom = 4,
 }
 ```
 
-## 一些图片
+## Images
 
 ### ToolTip:
 
