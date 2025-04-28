@@ -7,7 +7,7 @@
   <h4><a href="./README.md">中文</a> / English</h4>
 </div>
 
-## 特点
+## Feature
 
 - Only 10Kb Size
 - Use WinAPI `Shell_NotifyIcon`
@@ -19,10 +19,12 @@
 
 **Step 1:** Install Package `WPF.NotifyIcon` on Nuget
 
+Visit Nuget：[WPF.NotifyIcon - Nuget](https://www.nuget.org/packages/WPF.NotifyIcon/)
+
 CommandLine: `Install-Package WPF.NotifyIcon`
 
 Visual Studio Nuget: 
-![](images\nuget.png)
+![WPF.NotifyIcon nuget](./images/nuget.png)
 
 **Step 2:** NotifyIcon = new();
 
@@ -92,26 +94,26 @@ public enum ToolTipIcon
 
 ### ToolTip:
 
-![ToolTip](images\ToolTip.png)
+![ToolTip](./images/ToolTip.png)
 
 ### TrayMenu:
 
-![ToolTip](images\TrayMenu.png)
+![ToolTip](./images/TrayMenu.png)
 
 ### BalloonTip:
 
 **Light:**
 
-![ToolTip](images\None.png)
-![ToolTip](images\Info.png)
-![ToolTip](images\Warning.png)
-![ToolTip](images\Error.png)
-![ToolTip](images\Custom.png)
+![ToolTip](./images/None.png)
+![ToolTip](./images/Info.png)
+![ToolTip](./images/Warning.png)
+![ToolTip](./images/Error.png)
+![ToolTip](./images/Custom.png)
 
 **Dark:**
 
-![ToolTip](images\Dark_None.png)
-![ToolTip](images\Dark_Info.png)
-![ToolTip](images\Dark_Warning.png)
-![ToolTip](images\Dark_Error.png)
-![ToolTip](images\Dark_Custom.png)
+![ToolTip](./images/Dark_None.png)
+![ToolTip](./images/Dark_Info.png)
+![ToolTip](./images/Dark_Warning.png)
+![ToolTip](./images/Dark_Error.png)
+![ToolTip](./images/Dark_Custom.png)

@@ -19,10 +19,12 @@
 
 **步骤 1:** 在你的 WPF 项目安装包 `WPF.NotifyIcon`
 
+访问 Nuget 包地址：[WPF.NotifyIcon - Nuget](https://www.nuget.org/packages/WPF.NotifyIcon/)
+
 使用命令行: `Install-Package WPF.NotifyIcon`
 
 使用可视化界面: 
-![](images\nuget.png)
+![WPF.NotifyIcon nuget](./images/nuget.png)
 
 **步骤 2:** 创建一个 NotifyIcon
 
@@ -92,26 +94,26 @@ public enum ToolTipIcon
 
 ### ToolTip:
 
-![ToolTip](images\ToolTip.png)
+![ToolTip](./images/ToolTip.png)
 
 ### TrayMenu:
 
-![ToolTip](images\TrayMenu.png)
+![ToolTip](./images/TrayMenu.png)
 
 ### BalloonTip:
 
 **Light:**
 
-![ToolTip](images\None.png)
-![ToolTip](images\Info.png)
-![ToolTip](images\Warning.png)
-![ToolTip](images\Error.png)
-![ToolTip](images\Custom.png)
+![ToolTip](./images/None.png)
+![ToolTip](./images/Info.png)
+![ToolTip](./images/Warning.png)
+![ToolTip](./images/Error.png)
+![ToolTip](./images/Custom.png)
 
 **Dark:**
 
-![ToolTip](images\Dark_None.png)
-![ToolTip](images\Dark_Info.png)
-![ToolTip](images\Dark_Warning.png)
-![ToolTip](images\Dark_Error.png)
-![ToolTip](images\Dark_Custom.png)
+![ToolTip](./images/Dark_None.png)
+![ToolTip](./images/Dark_Info.png)
+![ToolTip](./images/Dark_Warning.png)
+![ToolTip](./images/Dark_Error.png)
+![ToolTip](./images/Dark_Custom.png)
