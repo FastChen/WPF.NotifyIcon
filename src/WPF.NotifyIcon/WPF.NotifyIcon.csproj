@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <UseWPF>true</UseWPF>
+    <TargetFrameworks>net462;net472;net481;net6.0-windows;net8.0-windows;net9.0-windows</TargetFrameworks>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <LangVersion>10.0</LangVersion>
+    <Authors>FastChen</Authors>
+    <Company>NullCraft.org</Company>
+    <Description>Native tray support for WPF (Windows)</Description>
+    <Copyright>Copyright © NullCraft.org All Rights Reserved.</Copyright>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.427</FileVersion>
+    <Version>1.0.0.427</Version>
+    <PackageIcon>logo_256x.png</PackageIcon>
+    <RepositoryUrl>https://github.com/FastChen/WPF.NotifyIcon</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <IncludeSymbols>False</IncludeSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\images\logo_256x.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="System.Diagnostics" />
+    <Using Include="System.Runtime.InteropServices" />
+    <Using Include="System.Windows" />
+    <Using Include="System.Windows.Interop" />
+  </ItemGroup>
+
+</Project>

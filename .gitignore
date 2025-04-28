@@ -1,0 +1,5 @@
+.vs
+/src/WPF.NotifyIcon/bin
+/src/WPF.NotifyIcon/obj
+/samples/WPF.NotifyIcon.Demo/bin
+/samples/WPF.NotifyIcon.Demo/obj
