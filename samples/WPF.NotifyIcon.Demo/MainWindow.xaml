@@ -8,10 +8,10 @@
         Title="WPF.NotifyIcon.Demo" Height="200" Width="600" Closing="Window_Closing">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
-            <RowDefinition Height="32"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -29,7 +29,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="2" Orientation="Horizontal">
-            <TextBox x:Name="TextBox_ToolTip" Text="HELLO!\nI'm here!" MinWidth="200" Margin="5"></TextBox>
+            <TextBox x:Name="TextBox_ToolTip" MinWidth="200" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Margin="5"></TextBox>
             <Button Content="设置托盘提示 | Set ToolTip" Margin="5" Tag="SetToolTip" Click="Button_Click"></Button>
         </StackPanel>
 

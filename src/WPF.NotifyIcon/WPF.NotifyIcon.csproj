@@ -12,12 +12,12 @@
     <Description>Native tray support for WPF (Windows)</Description>
     <Copyright>Copyright © NullCraft.org All Rights Reserved.</Copyright>
     <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.1.510</FileVersion>
-    <Version>1.0.0.427</Version>
+    <FileVersion>1.0.2.510</FileVersion>
+    <Version>1.0.2.510</Version>
     <PackageIcon>logo_256x.png</PackageIcon>
     <RepositoryUrl>https://github.com/FastChen/WPF.NotifyIcon</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>README-Nuget.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <IncludeSymbols>False</IncludeSymbols>
   </PropertyGroup>
@@ -27,7 +27,7 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\..\README.md">
+    <None Include="..\..\README-Nuget.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

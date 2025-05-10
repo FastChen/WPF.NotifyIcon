@@ -50,7 +50,7 @@ namespace WPF.NotifyIcon
         /// <returns></returns>
         public bool SetToolTip(string toolTip)
         {
-            _data.uFlags |= NIF_TIP;
+            _data.uFlags = NIF_TIP;
             _data.szTip = TrimTip(toolTip);
 
             return Shell_NotifyIcon(NIM_MODIFY, ref _data);
@@ -100,11 +100,11 @@ namespace WPF.NotifyIcon
             source?.AddHook(WndProc);
         }
 
-        // 设置图标的方法
+        //设置图标的方法
         private void SetIcon(IntPtr iconHandle)
         {
             _iconHandle = iconHandle;
-            _data.uFlags |= NIF_ICON;
+            _data.uFlags = NIF_ICON;
             _data.hIcon = _iconHandle;
             Shell_NotifyIcon(NIM_MODIFY, ref _data);
         }

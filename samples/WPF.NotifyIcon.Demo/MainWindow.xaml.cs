@@ -16,6 +16,8 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
 
+        TextBox_ToolTip.Text = $"Hello!{Environment.NewLine}I'm here!";
+
         // 通过文件获取图标句柄
         // Get icon handle from executable
         var icon = _notifyIcon.GetIconHandleFromFile(Environment.ProcessPath);
