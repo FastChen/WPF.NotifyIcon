@@ -11,6 +11,7 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
             <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -32,7 +33,12 @@
             <Button Content="设置托盘提示 | Set ToolTip" Margin="5" Tag="SetToolTip" Click="Button_Click"></Button>
         </StackPanel>
 
-        <Button Grid.Row="3" Content="退出 | Close" Margin="5" Tag="CLOSE" Click="Button_Click" VerticalAlignment="Bottom" ></Button>
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
+            <Button Content="开始闪烁 | Start Blink" Margin="5" Tag="StartBlink" Click="Button_Blink_Click"></Button>
+            <Button Content="停止闪烁 | Stop Blink" Margin="5" Tag="StopBlink" Click="Button_Blink_Click"></Button>
+        </StackPanel>
+
+        <Button Grid.Row="4" Content="退出 | Close" Margin="5" Tag="CLOSE" Click="Button_Click" VerticalAlignment="Bottom" ></Button>
 
     </Grid>
 </Window>

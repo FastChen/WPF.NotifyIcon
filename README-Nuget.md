@@ -1,10 +1,13 @@
+> [‼️] This is basic content for more info please visit [GitHub repositories](https://github.com/FastChen/WPF.NotifyIcon) for more information.
+
+
 <div align="center">
-  <img src="./images/logo_256x.png" alt="WPF.NotifyIcon" height="160" width="160"/>
+  <img src="https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/logo_256x.png" alt="WPF.NotifyIcon" height="160" width="160"/>
   <h1>WPF.NotifyIcon</h1>
   <h3>WPF Native NotifyIcon</h3>
   <img src="https://img.shields.io/github/stars/fastchen/WPF.NotifyIcon?label=Star&logo=github"/>
   <a href="https://github.com/FastChen/WPF.NotifyIcon/issues"><img src="https://img.shields.io/github/issues/fastchen/WPF.NotifyIcon?label=Issues"/></a>
-  <h4><a href="./README.md">中文</a> / English</h4>
+  <h4><a href="https://github.com/FastChen/WPF.NotifyIcon/blob/master/README.md">中文</a> / English</h4>
 </div>
 
 ## Feature
@@ -24,7 +27,7 @@ Visit Nuget：[WPF.NotifyIcon - Nuget](https://www.nuget.org/packages/WPF.Notify
 CommandLine: `Install-Package WPF.NotifyIcon`
 
 Visual Studio Nuget: 
-![WPF.NotifyIcon nuget](./images/nuget.png)
+![WPF.NotifyIcon nuget](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/nuget.png)
 
 **Step 2:** NotifyIcon = new();
 
@@ -97,26 +100,26 @@ public enum ToolTipIcon
 
 ### ToolTip:
 
-![ToolTip](./images/ToolTip.png)
+![ToolTip](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/ToolTip.png)
 
 ### TrayMenu:
 
-![ToolTip](./images/TrayMenu.png)
+![ToolTip](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/TrayMenu.png)
 
 ### BalloonTip:
 
 **Light:**
 
-![ToolTip](./images/None.png)
-![ToolTip](./images/Info.png)
-![ToolTip](./images/Warning.png)
-![ToolTip](./images/Error.png)
-![ToolTip](./images/Custom.png)
+![ToolTip](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/None.png)
+![ToolTip](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/Info.png)
+![ToolTip](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/Warning.png)
+![ToolTip](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/Error.png)
+![ToolTip](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/Custom.png)
 
 **Dark:**
 
-![ToolTip](./images/Dark_None.png)
-![ToolTip](./images/Dark_Info.png)
-![ToolTip](./images/Dark_Warning.png)
-![ToolTip](./images/Dark_Error.png)
-![ToolTip](./images/Dark_Custom.png)
+![ToolTip](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/Dark_None.png)
+![ToolTip](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/Dark_Info.png)
+![ToolTip](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/Dark_Warning.png)
+![ToolTip](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/Dark_Error.png)
+![ToolTip](https://github.com/FastChen/WPF.NotifyIcon/blob/master/images/Dark_Custom.png)

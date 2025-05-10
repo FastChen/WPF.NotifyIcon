@@ -16,6 +16,13 @@ namespace WPF.NotifyIcon
         public event Action RightClick;
         public event Action DoubleClick;
 
+        // Icon 属性
+        public IntPtr Icon
+        {
+            get => _iconHandle;
+            set => SetIcon(value);
+        }
+
         /// <summary>
         /// 裁剪提示文本，szTip 最大 128 字符（含结尾 null）
         /// </summary>
@@ -91,6 +98,15 @@ namespace WPF.NotifyIcon
             // 添加消息钩子
             var source = HwndSource.FromHwnd(_data.hWnd);
             source?.AddHook(WndProc);
+        }
+
+        // 设置图标的方法
+        private void SetIcon(IntPtr iconHandle)
+        {
+            _iconHandle = iconHandle;
+            _data.uFlags |= NIF_ICON;
+            _data.hIcon = _iconHandle;
+            Shell_NotifyIcon(NIM_MODIFY, ref _data);
         }
 
         /// <summary>

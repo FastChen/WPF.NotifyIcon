@@ -54,7 +54,10 @@ public MainWindow()
     _notifyIcon.ShowBalloonTip(5000, "Hello!", "WPF.NotifyIcon!", ToolTipIcon.None);
 
     // 设置 ToolTip 内容
-     _notifyIcon.SetToolTip("Wow!");
+    _notifyIcon.SetToolTip("Wow!");
+
+    // 可通过 Icon 属性设置/获取图标
+    _notifyIcon.Icon = IntPtr.Zero;
 }
 ```
 
@@ -91,6 +94,9 @@ public enum ToolTipIcon
 ```
 
 ## 一些图片
+
+### Demo App
+![ToolTip](./images/Demo.png)
 
 ### ToolTip:
 

@@ -12,7 +12,7 @@
     <Description>Native tray support for WPF (Windows)</Description>
     <Copyright>Copyright © NullCraft.org All Rights Reserved.</Copyright>
     <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.427</FileVersion>
+    <FileVersion>1.0.1.510</FileVersion>
     <Version>1.0.0.427</Version>
     <PackageIcon>logo_256x.png</PackageIcon>
     <RepositoryUrl>https://github.com/FastChen/WPF.NotifyIcon</RepositoryUrl>
